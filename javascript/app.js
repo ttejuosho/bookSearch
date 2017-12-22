@@ -8,6 +8,7 @@ $(document).ready(function (){
         var bookName = $("#bookName").val();
         
         $("#bookName").empty();
+        $("#resultsDiv").empty();
 
         
         // Google Books API Key
@@ -55,7 +56,8 @@ $(document).ready(function (){
                             "<p> Category: " + categories + "</p>" + 
                             "<p> Number of Pages: " + pageCount + "</p>" + 
                             "<p> Published on: " + publishedDate + "</p>" + 
-                            "<p> Published by: " + publisher + "</p>"
+                            "<p> Published by: " + publisher + "</p>" + 
+                            "<p> Description: " + description + "</p>"
                         );
                 
 

@@ -1,12 +1,21 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  
 .formDiv{
     width: 30%;
     display: block;
 }
 
-.container{
-    
-
-
+section{   
+    min-height: 500px;
 }
 
 nav ul li a{
@@ -17,17 +26,30 @@ nav ul li a{
     display: inline-block;
     border: 2px solid green;
     width:30%;
-    min-height: 200px;
 }
 
 .bookInfo{
     float: right;
     border: 2px solid black;
     width: 70%;
-    min-height: 200px;
     padding-left: 10px;
 }
 
 .booksDiv{
-    margin: 30px;
+    display: block;
+    clear: right;
 }
+
+#resultsDiv{
+    width: 70%;
+}
+
+.header, .footer, .content {
+    position: absolute;
+    width: 100%;
+}
+
+.header, .footer { height: 50px; }
+
+.header { top: 0; }
+.footer { bottom: 0; }
