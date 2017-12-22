@@ -8,19 +8,11 @@ body {
     flex: 1 0 auto;
   }
 
-  
+
 .formDiv{
     width: 30%;
     display: block;
 }
-
-section{   
-    min-height: 500px;
-}
-
-nav ul li a{
-    color: black;
-  } 
 
 .bookCover{
     display: inline-block;
@@ -53,3 +45,17 @@ nav ul li a{
 
 .header { top: 0; }
 .footer { bottom: 0; }
+
+.logo1{
+    color: black;
+    font-family: 'Patua One', cursive;
+    font-weight: 40px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+section{
+    min-height: 700px;
+}
