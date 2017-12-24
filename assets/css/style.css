@@ -32,10 +32,6 @@ body {
     margin-bottom: 10px;
 }
 
-#resultsDiv{
-    width: 90%;
-}
-
 .header, .footer, .content {
     position: absolute;
     width: 100%;

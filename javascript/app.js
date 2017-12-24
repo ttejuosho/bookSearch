@@ -17,8 +17,6 @@ $(document).ready(function (){
         console.log(bookName);
         console.log(searchKeywords);
         
-        // Google Books API Key
-            var APIKey = "AIzaSyCZHjfzT21eqDqHKtFwh3CcFbRVJNJgUmQ"
 
         // Grabbing the text in the input field and storing in bookName Variable
             
