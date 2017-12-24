@@ -28,12 +28,12 @@ body {
 }
 
 .booksDiv{
-    display: block;
-    clear: right;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 #resultsDiv{
-    width: 70%;
+    width: 90%;
 }
 
 .header, .footer, .content {
