@@ -47,11 +47,21 @@ $(document).ready(function (){
                     if (bookCover === undefined) {
                         bookCover = "../assets/images/boogleImage.png"; }
 
+                    // if other Book Info arent available say "Not Available"
+                    if (categories === undefined) { categories = "Not Available" } 
+                        else if ( pageCount === undefined){ pageCount = "Not Available" } 
+                        else if (description === undefined){description = "Not Available" } 
+                        else if (publisher === undefined){publisher = "Not Available" }
+                        else {publishedDate = "Not Available" }
 
+    
+        // Creating new Div and assigning to a newDiv variable and giving it a class of booksDiv   
                 var newDiv = $("<div>").addClass("booksDiv");
-
+    
+        // New ImageDiv with a Class of BookCover and assigning a src of the bookCover variable
                 var imageDiv = $("<img>").addClass("bookCover").attr("src", bookCover);
 
+        // new Div with class of bookInfo and insert all the bookinfo in the Div
                 var bookInfoDiv = $("<div>").addClass("bookInfo").html(
                             "Author: " + author + 
                             "<p> Title: " + title + "</p>" + 
@@ -62,10 +72,10 @@ $(document).ready(function (){
                             "<p> Description: " + description + "</p>"
                         );
                 
-
+            // append imageDiv & BookInfo to newDiv
                 newDiv.append(imageDiv);
                 newDiv.append(bookInfoDiv)
-
+            // append newDiv to DOM
                 $("#resultsDiv").append(newDiv);
                 
             }
