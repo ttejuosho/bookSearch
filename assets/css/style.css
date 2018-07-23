@@ -43,9 +43,7 @@ body {
 .footer { bottom: 0; }
 
 .logo1{
-    color: black;
-    font-family: 'Patua One', cursive;
-    font-weight: 40px;
+    margin: 15px;
 }
 
 nav ul li a {
